@@ -1,0 +1,12 @@
+### Compilation ###
+target/
+.mvn/
+mvnw
+mvnw.cmd
+*.jar
+
+### Sensitive ###
+application-dev.yml
+
+### IntelliJ IDEA ###
+.idea

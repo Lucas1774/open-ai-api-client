@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: openAiApiClient
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  port: 8080
+
+controller:
+  path: /api
+  form-path: /form
+
+openai:
+  api:
+    key: <api-key>
+    endpoint: <endpoint>
+    model: <model>

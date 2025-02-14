@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat bot</title>
+</head>
+<body>
+<h1>[[${modelPlaceHolder}]]</h1>
+<p>[[${answerPlaceHolder}]]</p>
+
+<form th:action="${url}" method="GET">
+    <label>Ask something <input type="text" name="query"/> </label>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
