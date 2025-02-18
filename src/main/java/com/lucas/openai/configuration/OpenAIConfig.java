@@ -1,16 +1,14 @@
 package com.lucas.openai.configuration;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
+@AllArgsConstructor
 @Getter
-@Setter
-@Configuration
 @ConfigurationProperties(prefix = "openai.api")
 public class OpenAIConfig {
-    private String key;
-    private String endpoint;
-    private String model;
+    private final String key;
+    private final String endpoint;
+    private final String model;
 }

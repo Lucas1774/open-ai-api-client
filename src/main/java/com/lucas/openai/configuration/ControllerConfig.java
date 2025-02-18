@@ -1,15 +1,13 @@
 package com.lucas.openai.configuration;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
+@AllArgsConstructor
 @Getter
-@Setter
-@Configuration
 @ConfigurationProperties(prefix = "controller")
 public class ControllerConfig {
-    private String path;
-    private String formPath;
+    private final String path;
+    private final String formPath;
 }
